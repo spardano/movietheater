@@ -20,9 +20,7 @@ class CreateShowsTable extends Migration
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('movie_id')->unsigned();
-            $table->foreign('movie_id')->references('movie_id')->on('movies');
             $table->integer('studio_id')->unsigned();
-            $table->foreign('studio_id')->references('studio_id')->on('studios');
             $table->timestamps();
         });
     }

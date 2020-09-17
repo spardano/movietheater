@@ -18,7 +18,6 @@ class CreateSeatsTable extends Migration
             $table->char('seat_row');
             $table->smallInteger('seat_number');
             $table->integer('studio_id')->unsigned();
-            $table->foreign('studio_id')->references('studio_id')->on('studios');
             $table->timestamps();
         });
     }
