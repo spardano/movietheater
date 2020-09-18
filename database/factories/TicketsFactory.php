@@ -8,6 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(App\TicketsModel::class, function (Faker $faker) {
     return [
         'show_id' => $faker->numberBetween(3, 32),
-        'ticket_type' => $faker->numberBetween(1, 2)
+        'ticket_type' => $faker->numberBetween(1, 2),
+        'seat' => $faker->numberBetween(1, 400)
     ];
 });
