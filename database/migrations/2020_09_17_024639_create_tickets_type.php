@@ -17,6 +17,8 @@ class CreateTicketsType extends Migration
             $table->increments('ticket_type_id');
             $table->string('ticket_type_name');
             $table->integer('price');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

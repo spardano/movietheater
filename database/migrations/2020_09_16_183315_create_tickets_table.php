@@ -18,6 +18,8 @@ class CreateTicketsTable extends Migration
             $table->integer('show_id')->unsigned();
             $table->integer('ticket_type')->unsigned();
             $table->integer('seat')->unsigned();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 
