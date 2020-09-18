@@ -18,7 +18,6 @@ class CreateStaffTable extends Migration
             $table->string('staff_name');
             $table->string('staff_email');
             $table->string('staff_password');
-            $table->string('staff_akses');
             $table->timestamps();
         });
     }
